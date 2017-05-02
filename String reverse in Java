@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+
+public class Main{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(new BufferedInputStream(System.in));
+		
+		int T=sc.nextInt();
+		
+		for(int i=1;i<=T;i++)
+		{
+			
+			String s=sc.next();
+			
+			String reverse=new StringBuffer(s).reverse().toString();
+			
+			
+			System.out.println(reverse);
+			
+			
+		}
+		
+		}
+	}
+	
