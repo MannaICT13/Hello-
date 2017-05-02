@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+
+public class Main{
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc= new Scanner(System.in);
+		
+		int T=sc.nextInt();
+		
+		for(int i=1;i<=T;i++){
+			
+			int x1=sc.nextInt();
+			int y1=sc.nextInt();
+			double r=sc.nextDouble();
+			int x2=sc.nextInt();
+			int y2=sc.nextInt();
+			
+			double r1=Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+			
+			if(r==r1)
+			{
+				System.out.println("Case "+i+":"+" OnCircle");
+			}
+			 if(r<r1)
+			{
+				System.out.println("Case "+i+":"+" Outside");
+			}
+			if(r>r1)
+			{
+				System.out.println("Case "+i+":"+" Inside");
+			}
+		}
+		
+		
+		}
+	}
+	
